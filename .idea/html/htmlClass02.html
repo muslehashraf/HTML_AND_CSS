@@ -1,10 +1,201 @@
+
+
+<!----
+
+# Recap HTML && CSS Class 1
+
+`Web Browser`: They allow us to see Web Pages. Ex: Chrome, Firefox, Safari ...
+
+`Web Pages`: Whatever we see on Web Browser.
+
+`Web Element / Element`: Combining tags we get elements.
+
+Tags: `<tagName>content</tagName>`
+
+Examples (element/tags):
+- doctype
+- html
+- head (title, meta)
+- body
+- img
+- p
+- br
+- hr
+- heading (h1 - h6)
+- strong / b
+- em / i
+- mark (highlight)
+
+Attributes Examples:
+	- img (src, alt, width, height)
+	- a (href)
+
+Styling (applying CSS to HTML)
+inline styling (we give style to the element itself)
+
+-->
+
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
   <title>HTML && CSS Class 2</title>
+  <style>
+        #blog1 {
+		   color: purple;
+		   background-color: yellow;
+		   font-size: 38px;
+		   font-family: cursive;
+		   font-weight: bold;
+		   text-align: center;
+		}
+		#blog2 {
+		   color: purple;
+		   background-color: lightcyan;
+		   font-size: 38px;
+		   font-family: cursive;
+		   font-weight: bold;
+		   text-align: center;
+		}
+		h1 {
+			text-align: center;
+		}
+		table {
+			border-collapse: collapse;
+		}
+		table, th, td {
+			border: 1px solid #000000;
+		}
+		th {
+			background-color: gray;
+		}
+	</style>
 </head>
-<body>
+<body style="text-align: center">
+<h1>Class 2 - Styling</h1>
+<p id="blog1">Some random text</p>
+<p id="blog2">Some random text 2</p>
+
+<h1>Unordered List</h1>
+
+<p>Students Names</p>
+<!-- unordered list -->
+<ul>
+  <li>John</li>
+  <li>Doe</li>
+  <li>Jane</li>
+</ul>
+
+<h1>Ordered Lists</h1>
+<p>Race Results</p>
+<!-- ordered list -->
+<ol>
+  <li>Runner 1</li>
+  <li>Runner 2</li>
+  <li>Runner 3</li>
+</ol>
+
+<!-- 	<ol type="A">
+		<li>Text 1</li>
+	</ol> -->
+
+
+<h1>HTML Tables</h1>
+
+<!-- container -->
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>joe@mail.me</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>jane@mail.me</td>
+  </tr>
+</table>
+
+
+<h1>HTML Forms</h1>
+
+<form action="#">
+  <fieldset>
+    <legend>This is a form</legend>
+    <!-- types of input elements -->
+    <p>
+      <label for="fname">First Name</label>
+      <input name="fname" type="text"/>
+      <!-- <input type="text" placeholder="Name" /> -->
+    <p>
+    <p>
+      <label for="fname">Last Name</label>
+      <input name="lname" type="text"/>
+    </p>
+
+    <p>
+      <label>Password</label>
+      <input type="password"/>
+    </p>
+
+    <p>
+      <label>Email</label>
+      <input type="email"/>
+    </p>
+    <p>
+      <label>Do you have experience with Java?</label>
+      <br/>
+      <!-- make sure name for all checkbox inputs are same: experience -->
+      <label for="yes">Yes</label>
+      <input type="radio" value="Yes" name="experience" checked/>
+
+      <label for="no">No</label>
+      <input type="radio" value="No" name="experience"/>
+    </p>
+
+    <p>
+      <label>Select all that applies: </label>
+      <br/>
+      <!-- provide different names for each checkbox input -->
+
+      <label>I am at least 18 yo</label>
+      <input type="checkbox" name=""/>
+
+      <label>I am a tourist</label>
+      <input type="checkbox" name=""/>
+    </p>
+
+    <p>
+      <label>Your favorite colors?</label>
+      <select>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Orange</option>
+      </select>
+    </p>
+    <p>
+      <label>Any questions for us?</label>
+      <textarea rows="10" cols="15"></textarea>
+    </p>
+    <p>
+      <input type="submit"/>
+      <!-- <button>Submit</button> -->
+    </p>
+  </fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
